@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Controlled Presentation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- <style>
+        #webcamContainer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%; /* Adjust size as needed */
+            z-index: 9999; /* Ensure webcam is on top of presentation */
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div id="webcamContainer">
+        <video id="webcam" autoplay></video>
+    </div> -->
+    <div class="container">
+        <h1>Gesture Controlled Presentation</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" accept=".pptx">
+        <label for="fileInput" id="fileLabel">Choose a file...</label>
+            <input type="file" id="fileInput" name="file" accept=".pptx">
+            <button type="submit">Upload and Open</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
